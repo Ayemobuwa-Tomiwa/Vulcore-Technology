@@ -41,6 +41,17 @@ export default function Projects() {
   ];
 
   useEffect(() => {
+    gsap.to(".projects-bg", {
+  y: 120,
+  ease: "none",
+  scrollTrigger: {
+    trigger: sectionRef.current,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
     gsap.fromTo(
       ".project-card",
       { opacity: 0, y: 100 },
@@ -62,19 +73,26 @@ export default function Projects() {
     <section
       id="projects"
       ref={sectionRef}
-      className="py-24 px-6 bg-black"
+      className="py-24 px-6 relative overflow-hidden"
     >
         {/* Background */}
-  <div className="absolute inset-0 -z-10">
+  <div className="absolute inset-0 -z-0">
     <img
       src="/images/project-bg.png"
-      className="w-full h-full object-cover"
+      className="projects-bg w-full h-full object-cover"
     />
-    <div className="absolute inset-0 bg-black/80"></div>
+    <div className="absolute inset-0 bg-black/40"></div>
   </div>
-      <div className="max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl mb-16 text-center">
-          Our Projects
+          Showcasing {" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 font-semibold">
+            Our {" "}
+          </span>
+            Latest {" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 font-semibold">
+            Projects
+          </span>
         </h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">

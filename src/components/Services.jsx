@@ -9,6 +9,29 @@ export default function Services() {
   const sectionRef = useRef();
 
   useEffect(() => {
+    ScrollTrigger.update();
+
+    gsap.to(".services-bg", {
+  y: 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: sectionRef.current,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
+    gsap.to(".services-bg", {
+  scale: 1.1,
+  scrollTrigger: {
+    trigger: sectionRef.current,
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
     gsap.fromTo(
       ".service-card",
       { opacity: 0, y: 80 },
@@ -36,7 +59,7 @@ export default function Services() {
       <div className="absolute inset-0 z-0">
   <img
     src="/images/services-bg.jpg"
-    className="w-full h-full object-cover"
+    className="services-bg w-full h-full object-cover"
   />
   <div className="absolute inset-0 bg-black/40"></div>
 </div>
@@ -48,7 +71,7 @@ export default function Services() {
         </h2>
 
         <p className="text-gray-300 mb-16 text-lg">
-          We Build{" "}
+          We Build{" "} 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 font-semibold">
             Cutting-Edge Apps & Software
           </span>

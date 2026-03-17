@@ -1,3 +1,4 @@
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -32,6 +33,14 @@ export default function Hero() {
         { opacity: 1, duration: 1 },
         "-=0.5"
       );
+
+      ScrollTrigger.create({
+    trigger: heroRef.current,
+    start: "top top",
+    end: "+=100%",
+    pin: true,
+    scrub: true,
+  });
   }, []);
 
   return (
