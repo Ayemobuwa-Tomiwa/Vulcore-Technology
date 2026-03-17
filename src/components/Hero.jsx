@@ -43,11 +43,11 @@ export default function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/src/assets/images/hero-bg.jpg.png"
+          src="images/hero-bg.png"
           alt="background"
           className="w-full h-full object-cover scale-100"
         />
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Content */}

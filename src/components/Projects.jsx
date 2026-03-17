@@ -10,22 +10,22 @@ export default function Projects() {
   const projects = [
     {
       title: "Netflixo",
-      image: "/src/assets/images/project1.jpeg",
+      image: "/images/project1.jpeg",
       link: "https://netflixo.vercel.app",
     },
     {
       title: "School Community",
-      image: "/src/assets/images/project2.jpg",
+      image: "images/project2.jpg",
       link: "https://example.com",
     },
     {
       title: "Animax",
-      image: "/src/assets/images/project3.jpg",
+      image: "images/project3.jpg",
       link: "https://example.com",
     },
     {
       title: "Billing System",
-      image: "/src/assets/images/project4.jpg",
+      image: "images/project4.jpg",
       link: "https://billingsystemdashboard.netlify.app",
     },
     {
@@ -64,6 +64,14 @@ export default function Projects() {
       ref={sectionRef}
       className="py-24 px-6 bg-black"
     >
+        {/* Background */}
+  <div className="absolute inset-0 -z-10">
+    <img
+      src="/images/project-bg.png"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-black/80"></div>
+  </div>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-5xl mb-16 text-center">
           Our Projects
