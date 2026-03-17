@@ -81,7 +81,7 @@ export default function Projects() {
       src="/images/project-bg.png"
       className="projects-bg w-full h-full object-cover"
     />
-    <div className="absolute inset-0 bg-black/40"></div>
+    <div className="absolute inset-0 bg-black/10"></div>
   </div>
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl mb-16 text-center">

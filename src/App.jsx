@@ -1,15 +1,11 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Projects from "./components/Projects";
+import Home from "./sections/Home";
 
 function App() {
   return (
     <div className="bg-black text-white">
       <Navbar />
-      <Hero />
-      <Services />
-      <Projects />
+      <Home />
     </div>
   );
 }

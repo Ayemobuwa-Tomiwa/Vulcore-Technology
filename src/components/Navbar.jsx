@@ -20,10 +20,17 @@ export default function Navbar() {
           <a href="#home" className="hover:text-white transition">HOME</a>
           <a href="#services" className="hover:text-white transition">SERVICES</a>
           <a href="#projects" className="hover:text-white transition">PROJECTS</a>
-          <a href="#contact" className="hover:text-white transition">CONTACT</a>
+
+          {/* Hamburger */}
+          <div
+            className="cursor-pointer text-xl"
+            onClick={() => setOpen(!open)}
+          >
+            ☰
+          </div>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Hamburger */}
         <div
           className="md:hidden flex flex-col gap-1 cursor-pointer"
           onClick={() => setOpen(!open)}
@@ -34,13 +41,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Dropdown Menu (Desktop + Mobile) */}
       {open && (
-        <div className="md:hidden bg-black/90 text-white flex flex-col items-center gap-6 py-6">
-          <a href="#home" onClick={() => setOpen(false)}>HOME</a>
-          <a href="#services" onClick={() => setOpen(false)}>SERVICES</a>
-          <a href="#projects" onClick={() => setOpen(false)}>PROJECTS</a>
-          <a href="#contact" onClick={() => setOpen(false)}>CONTACT</a>
+        <div className="absolute right-0 top-15 bg-black/70 backdrop-blur-lg border border-white/15 rounded-xl px-8 py-6 flex flex-col gap-6 text-gray-400">
+          <a href="#about" onClick={() => setOpen(false)} className="hover:text-white">ABOUT</a>
+          <a href="#contact" onClick={() => setOpen(false)} className="hover:text-white">CONTACT</a>
+          <a href="#faq" onClick={() => setOpen(false)} className="hover:text-white">FAQs</a>
         </div>
       )}
     </nav>
