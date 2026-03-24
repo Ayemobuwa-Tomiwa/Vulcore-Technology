@@ -7,17 +7,22 @@ export default function FAQ() {
     {
       question: "How long does a project take?",
       answer:
-        "Project timelines vary depending on complexity, but most projects range from 2 to 6 weeks.",
+        "Project timelines vary depending on complexity, but most projects range from 1 to 3 weeks .",
     },
     {
-      question: "Do you work with international clients?",
+      question: "Do you work with small and medium-sized businesses?",
       answer:
-        "Yes. We work with clients worldwide and communicate through modern collaboration tools.",
+        "Yes. We work with buisnesses of any variant and communicate through modern collaboration tools. We are confident in delivering high-quality software solutions that meets the needs of any business",
     },
     {
       question: "What technologies do you use?",
       answer:
         "We specialize in modern stacks including React, Node.js, Tailwind CSS, and scalable backend solutions.",
+    },
+    {
+      question: "Do you charge a mobilization fee when starting a project?",
+      answer:
+        "Yes. We charge a 50% mobilization fee for singlar projects to cover initial project setup and resource allocation, While, for multiple projects, we offer a 60% mobilization fee to ensure we can dedicate the necessary resources and provide a seamless experience across all projects. The rest is paid upon project completion.",
     },
   ];
 

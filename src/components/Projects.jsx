@@ -21,7 +21,7 @@ export default function Projects() {
   {
     title: "Animax",
     image: "/images/project3.jpg",
-    link: "https://example.com",
+    link: "https://animaxdemo.netlify.app",
   },
   {
     title: "Billing System",

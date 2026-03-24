@@ -66,8 +66,8 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="scroll-indicator absolute bottom-10 left-10 -translate-x-1/2 text-gray-400 text-sm">
-        ↓ Scroll
+      <div className="scroll-indicator absolute bottom-10 left-10 -translate-x-1/2 text-gray-400 text-3xl animate-bounce">
+         Scroll ↓
       </div>
     </section>
   );

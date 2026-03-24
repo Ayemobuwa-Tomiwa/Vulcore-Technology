@@ -41,7 +41,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 px-6">
+    <section id="contact" className="py-20 px-6">
+      <div className="max-w-5xl mx-auto text-center about-content">
+        <h2 className="text-3xl md:text-5xl mb-8">
+          Send Us{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
+            An Email
+          </span>
+        </h2></div>
 
       {toast && (
         <Toast
