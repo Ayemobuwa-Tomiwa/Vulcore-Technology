@@ -78,7 +78,7 @@ export default function Footer() {
                 <Linkedin className="hover:text-yellow-400 transition" />
               </a>
 
-              <a href="#" target="_blank">
+              <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=h7p9w3h" target="_blank">
                 <Instagram className="hover:text-yellow-400 transition" />
               </a>
               </div>
