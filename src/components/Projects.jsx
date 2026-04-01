@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -6,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
   const sectionRef = useRef();
+  const [ setOpen] = useState(false);
 
   const projects = [
   {
@@ -141,6 +144,25 @@ export default function Projects() {
   );
 })}
         </div>
+        <div className="relative z-10 max-w-7xl mx-auto text-center mt-16">
+        <p className="text-xl md:text-2xl mb-9 text-center">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 font-semibold">
+            Send Us A Mail {" "}
+          </span>
+            On Our Contact Page Let's Discuss How We Can {" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 font-semibold">
+            Bring Your Ideas To Life! {" "}
+          </span>
+        </p>
+        <Link
+                    to="/company#contact"
+                    onClick={() => setOpen(false)}
+                    className="text-yellow-400 underline hover:text-white"
+                  >
+                    Click Here To Navigate There!
+                  </Link>
+        </div>
+        
       </div>
     </section>
   );

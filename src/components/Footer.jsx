@@ -97,7 +97,7 @@ export default function Footer() {
 </a>
 
     <a
-  href="#"
+  href="https://x.com/VulcoreTech"
   target="_blank"
   onMouseEnter={() => setHoveredIcon("x")}
   onMouseLeave={() => setHoveredIcon(null)}
